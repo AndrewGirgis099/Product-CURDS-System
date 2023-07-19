@@ -1,0 +1,103 @@
+
+/* title */
+.title{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.title-container{
+    width: 400px;
+    transition: 0.5s;
+
+}
+
+.layer{
+    width: 100%;
+    height: 55%;
+    bottom: -35%;   
+    transition: 0.5s;
+    background-color: #FEC260 !important;
+}
+
+.title-container:hover .layer{
+    transform: translateY(-30%);
+
+}
+
+.dot-underline{
+    width: 100%;
+    height: 1px;
+    border: 1px dotted #000;
+}
+
+.coloerd-paragraph{
+    background: -webkit-linear-gradient( right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+
+
+
+@media screen and (max-width:570px){
+    .my-table{
+        width: fit-content;
+        margin: auto;
+    }
+    .my-input{
+        width: 730px;
+    }
+
+    .product-img{
+        width: 80px;
+    }
+    
+    .table-rwp{
+        width: 750px;
+    }
+}
+
+
+body{
+    background-color: rgb(255, 255, 219);
+}
+.addBtn{
+    background-color: brown !important;
+}
+.addBtn:hover{
+    background-color: rgb(204, 47, 47) !important;
+}
+
+.updateBtn:hover{
+    background-color: rgb(236, 168, 19) !important;
+}
+.title{
+    color: brown;
+}
+
+
+
+
+.swal-button:hover {
+    background-color: rgb(204, 47, 47) !important;
+}
+.swal-button {
+    background-color:brown  ;}
+
+    .swal-title {
+        color: #000;
+        font-weight: 700;
+        text-transform: none;
+        position: relative;
+        display: block;
+        padding: 13px 16px;
+        font-size: 27px;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .product-img{
+        width: 150px;
+        height: 150px;
+    }

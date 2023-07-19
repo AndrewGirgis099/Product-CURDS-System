@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="download.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>CRUDS System</title>
+
+
+</head>
+<body>
+
+    <div class="container fw-bolder pt-5 my-input">
+        <div class="text-center   overflow-hidden">
+            <div class="position-relative title-container mx-auto  overflow-hidden"> 
+                <div class=" mt-5 ">
+                    <h1 class="title p-0 m-0">CRUDS SYSTEM</h1>
+                </div>
+                <div class="position-absolute  layer d-flex justify-content-center z-n1 ">
+                </div>
+            </div>
+
+            <div class="dot-underline my-5">
+
+            </div>
+            <div class="text-xl-center coloerd-paragraph">
+                <p class="fs-4 fw-bolder"><i class="fa-solid fa-bookmark px-2"></i>Create Your Product<i class="fa-solid fa-bookmark px-2"></i> </p>
+        
+            </div>
+    
+        </div>
+
+        <div class="my-3 form-group mx-auto">
+            <label for="ProductName" class="fw-bold pt-3">Product Name:</label>
+            <input type="text" id="ProductName" class="form-control py-2" placeholder="Product Name">
+
+            <label for="ProductImg" class="fw-bold pt-3">Product IMG:</label>
+            <input type="file" accept="image/*" id="ProductImg" class="form-control py-2" placeholder="Product Name">
+
+
+            <label for="ProductPrice" class="fw-bold pt-3">Product Price:</label>
+            <input type="text" id="ProductPrice" class="form-control py-2" placeholder="Product Price">
+
+            <label for="ProductCategory" class="fw-bold pt-3">Product Category:</label>
+            <input type="text" id="ProductCategory" class="form-control py-2" placeholder="Product Category">
+
+            <label for="ProductDesc" class="fw-bold pt-3">Product Desc:</label>
+            <textarea type="text" id="ProductDesc" class="form-control py-2" placeholder="Product Desc"></textarea>
+
+            <button id="addBtn" class="btn w-100 py-2 text-white mt-4 d-block addBtn" onclick="addProduct()">Add Product</button>
+            <button id="updateBtn" class="btn w-100 py-2 bg-warning text-white mt-4 d-none updateBtn" onclick="UpdateProduct()">Update Product</button>
+
+            <div class="dot-underline my-5">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container mx-auto my-3 my-table  table-rwp">
+        <table class="table table-responsive-md">
+
+            <input type="text" placeholder="Search by Name..." class="form-control w-75 py-2 mx-auto my-4" oninput="searchProduct(this.value)">
+
+            <thead class="text-center">
+                <tr>
+                    <th class="td-cell">Name</th>
+                    <th class="td-cell">IMG</th>
+                    <th class="td-cell">Price</th>
+                    <th class="td-cell">Category</th>
+                    <th class="td-cell">Desc</th>
+                    <th class="td-cell">Update</th>
+                    <th class="td-cell">Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="TableBody" class="text-center">
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
